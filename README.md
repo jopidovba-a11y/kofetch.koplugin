@@ -40,6 +40,18 @@ The plugin replaces the standard Koreader homepage with a system-monitor-style d
 </tr>
 </table>
 
+## Installation
+
+Copy the plugin directory into KOReader's plugins directory:
+
+```text
+koreader/
+└── plugins/
+    └── sysmonitor.koplugin/
+```
+
+Restart Koreader then go to menu -> file manager -> kofetch. 
+
 ## Features
 
 ### System information
@@ -118,27 +130,6 @@ return [=[ \(0-0)/ ]=]
 * Do not include the sequence `]=]` anywhere inside your artwork, as it marks the end of the text.
 * Use a monospaced ASCII art design for the best results.
 * You can use any code editor to make the change; no programming knowledge is required.
-* 
-## Compatibility
-
-The first realease is a **beta** plugin.
-
-It has primarily been developed and tested on a **Kobo Clara BW** running Koreader.
-
-Koreader supports many different devices through device-specific implementations, so some information may behave differently depending on the e-reader.
-
-In particular, the CPU/process monitor relies on Linux `/proc` information. Devices with different system implementations or restrictions may not provide all of the same information.
-
-If you test the plugin on another device, feedback about compatibility is very welcome.
-
-Useful information to report:
-
-* Device model
-* KOReader version
-* Which information shows `?`
-* Whether the CPU monitor works
-* Whether the file browser works
-* Any crashes or unexpected behavior
 
 ## Android
 
@@ -147,8 +138,6 @@ The plugin is **not expected to provide the same functionality on Android**.
 KOReader on Android runs under Android's permission and sandbox restrictions, which prevent it from accessing some of the low-level Linux information used by the CPU/process monitor.
 
 Some parts of the dashboard may still work, but CPU and process information can be incomplete or unavailable.
-
-A separate Android-oriented version may be possible in the future using Android APIs while keeping the same system-monitor aesthetic.
 
 ## Battery considerations
 
@@ -170,18 +159,7 @@ The history is lost when KOReader itself is restarted or its Lua modules are rel
 
 This is intentional; the plugin does not continuously write CPU history to storage.
 
-## Installation
 
-Copy the plugin directory into KOReader's plugins directory:
 
-```text
-koreader/
-└── plugins/
-    └── sysmonitor.koplugin/
-```
 
-Restart Koreader then go to menu -> file manager -> kofetch. 
 
-## License
-
-See the repository license for details.
