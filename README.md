@@ -133,11 +133,7 @@ return [=[ \(0-0)/ ]=]
 
 ## Android
 
-The plugin is **not expected to provide the same functionality on Android**.
-
-KOReader on Android runs under Android's permission and sandbox restrictions, which prevent it from accessing some of the low-level Linux information used by the CPU/process monitor.
-
-Some parts of the dashboard may still work, but CPU and process information can be incomplete or unavailable.
+CPU and process information can be incomplete or unavailable in android devices, you can replace this card with reading speed or activity card in order to fix the visual aspect (Kofetch -> Card3).  
 
 ## Battery considerations
 
@@ -149,15 +145,6 @@ The most expensive part of a CPU sample is reading the individual process statis
 
 During device suspension, CPU sampling is stopped and resumes when KOReader becomes active again.
 
-## Data persistence
-
-CPU history is kept in memory while the Koreader session is running.
-
-Closing the dashboard does not clear the histogram, so the history can continue accumulating while reading a book and will still be available when the dashboard is opened again.
-
-The history is lost when KOReader itself is restarted or its Lua modules are reloaded.
-
-This is intentional; the plugin does not continuously write CPU history to storage.
 
 
 
