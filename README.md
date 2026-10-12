@@ -3,6 +3,7 @@
 A Linux/system-monitor-style dashboard for KOReader, inspired by tools such as neofetch and Linux terminal interfaces.
 
 The plugin replaces the standard Koreader homepage with a system-monitor-style dashboard containing device information, a built-in file browser, and a CPU monitor.
+
 <table>
 <tr>
 <td align="center">
@@ -33,12 +34,13 @@ The plugin replaces the standard Koreader homepage with a system-monitor-style d
 </a>
 </td>
 <td align="center">
-<a href="https://github.com/user-attachments/assets/ef90ab0b-1333-4f62-84c3-deb0745aa430">
-<img src="https://github.com/user-attachments/assets/ef90ab0b-1333-4f62-84c3-deb0745aa430" alt="6" width="250">
+<a href="https://github.com/user-attachments/assets/e76792bb-695f-4263-87be-466bb633e7a6">
+<img src="https://github.com/user-attachments/assets/e76792bb-695f-4263-87be-466bb633e7a6" alt="FileManager_2026-10-11_193131" width="250">
 </a>
 </td>
 </tr>
 </table>
+
 
 ## Installation
 
